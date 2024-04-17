@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+/* Existing styles for basic React app layout */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional styles for the image upload feature */
+.upload-btn {
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.image-preview {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.App-header {
+  /* ... other existing styles ... */
+  background-size: cover; /* Ensure background image covers the entire header */
+  background-position: center; /* Center the background image */
+}
+.App {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  height: 100vh; /* Make App fill the entire viewport height */
+  background-size: cover;
+  background-position: center;
+}
+
+.App-content {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* You can adjust this as needed */
+  max-width: 600px; /* You can adjust this as needed */
+}
+
+.image-preview-container {
+  margin-top: 20px;
+}
+
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Optional: if you want rounded corners */
+}
+/* ... existing styles ... */
+
+/* Add this new CSS for the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Take up full viewport height */
+  text-align: center;
+}
+
+.login-container input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+}
+
+.login-container button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
